@@ -17,3 +17,9 @@ app.listen(4000, ()=>{
     console.log('listening at port 4000');
 })
 
+// Ruta para probar el servidor
+app.get('/', (req, res) => {
+    res.json({ 
+      message: 'API de marketplace funcionando correctamente'
+    });
+  });
